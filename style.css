@@ -24,4 +24,8 @@ ul {
 }
 li {
   padding-top: 10px;
+  width: 30%;
+}
+li:hover {
+  cursor: pointer;
 }

@@ -17,6 +17,7 @@ function createListElement() {
   var deleteButton = document.createElement("button");
   deleteButton.innerText = "Remove Item";
   deleteButton.addEventListener("click", (event) => ul.removeChild(li));
+  li.addEventListener("click", liClick);
   li.appendChild(deleteButton);
   ul.appendChild(li);
   input.value = "";
@@ -38,7 +39,6 @@ function liClick() {
   this.classList.toggle("done");
 }
 
-function removeItem() {}
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
